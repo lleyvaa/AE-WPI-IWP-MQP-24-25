@@ -7,6 +7,6 @@ INSTRUCTIONS FOR USE OF HVPC DESIGN TOOL:
   1. Download files in "MATLAB and .xls Files" folder.
   2. Open "Inverter_Transformer_Analysis.m" file. This code takes data from the "CoreLossData.xls" file as input to the design space (the "Ecore_actual_EEER_xfmer_LCC_V2.m" matlab script) and generates an excel file containing a selection of transfmromer configurations. "3_3_25_xxx.xls" is an example of the output data.
   3. Adjust electrical parameters in "Inverter_Transformer_Analysis.m" and "Ecore_actual_EEER_xfmer_LCC_V2.m" code to suit needs. Refer to MQP report section 3.2.3 and relevant references used for deatils.
-  4. Run the code in to generate excel sheet with output parameters.
+  4. Run the code to generate excel sheet with output parameters.
 
 [1] Y. He, Towards Lightweight High-voltage Power Conversion, Massachusetts Institute of Technology, Department of Electrical Engineering and Computer Science, 2020.
