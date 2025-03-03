@@ -1,0 +1,37 @@
+clc; clear variables; close all;
+
+%INPUTS
+Po = 600; % [W]
+fs = 500000; % [Hz]
+Vsec = 7.5e3; % [V]
+Vpri = 500; % [V]
+kf = 4.44; % wavefor coeff, 4.44 for sine wave
+Bm = 0.03; % Assumed
+Jp = 500; % Current density, assumed 500 [A/cm^2]
+kp = 0.1; % Packing factor, assumed
+
+%Core Size Data
+Ap = 19.07e-8; %m^4  Area product
+Ac = 3.677e-4; %m^2  
+Le = 13.9e-2; %m
+Wa = 5.186e-4; %m^2
+H = 4.5e-2; %m
+W = 2.305e-2; %m
+MLT = 12.9e-2; %m
+
+%Core loss Data
+Pcore = 3.9; %W
+
+Np = Vpri/(kf*Bm*Ac*fs);
+
+Ns = Np*(Vsec/Vpri);
+
+% Temp
+
+% Calculate temperature rise
+   
+Rth = 16.31.*1e-3.*(Ac.*Wa).^(-0.405);
+Tafterloss = Rth.*(Pcore) + 25;  %assume Pcopper << Pcore
+
+Weight
+
